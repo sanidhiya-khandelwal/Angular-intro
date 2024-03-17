@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PostComponent {
   title: string = "List of posts";
+  postParentMessage: string = 'Message coming from the post parent' //step1 creating variable
 
   //step 3 In your child component, define an Input property to receive the string data from the parent.
   @Input()
