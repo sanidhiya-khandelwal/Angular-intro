@@ -1,3 +1,9 @@
 <h1>Angular Component</h1>
+
 <app-navbar></app-navbar>
-<app-post></app-post>
+<!--step 2 Passing variable 'parentMessage' to 'post' component(child component)  ,"fromParent" ki jagah kuch bhi naam de skte yh bind krne k kaam aata h
+"fromParent" call krenge hum post.ts file me 
+
+In the parent component's template, pass the string data to the child component using property binding.
+-->
+<app-post [fromParent]='parentMessage'></app-post>
