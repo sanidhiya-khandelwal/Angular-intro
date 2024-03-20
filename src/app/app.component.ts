@@ -10,7 +10,7 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   title = '01AgIntro';
   parentMessage: string = 'Message coming from parent component'; //step 1 creating variable in parent that needs to be passed to child component using @input decorator 
   displayChildMssg: string | undefined; //step3view ki.. creating variable
-
+  fromChildOutput!: string; //step8 Output decorator....creating variable for string interpolation
   //ViewChild ki help se Child k saare variables/data accessible h
   @ViewChild(PostComponent) childComp: any; //step1 view ki.. view child takes parent component and name of variable u can give any name
 
@@ -22,4 +22,11 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     this.displayChildMssg = this.childComp.childMessage //step8 store the variable and do string interpolation
   }
 
+
+  // step7 Output decorator ..creating fucntion tht will recive message
+  reciveMessage($event: any) {
+    console.log($event);
+    this.fromChildOutput = $event;
+
+  }
 }

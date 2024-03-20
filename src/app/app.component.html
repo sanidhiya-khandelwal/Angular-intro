@@ -6,7 +6,12 @@
 
 In the parent component's template, pass the string data to the child component using property binding.
 -->
-<app-post [fromParent]='parentMessage'></app-post>
+<app-post [fromParent]='parentMessage' (messageEvent)='reciveMessage($event)'></app-post>
+<!-- step6 Output Decorator .... binding event emitter with this app-post and creating fucntion "reciveMessage" in app.component.ts whihc is step7-->
 
 <!-- step9 display message  -->
 {{displayChildMssg}}
+
+<br><br>
+<!-- step9  output decorator -->
+{{fromChildOutput}}

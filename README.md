@@ -31,7 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Two ways of Passing data from Child component to Parent component :
 1-> Using @ViewChild decorator
-
+2-> Child to Parent when there is Event, using the @Output Decorator and Event Emitter
+This approach is ideal when we want to share data chnages that occur on things like button clicks, form entries, and other user events.
 
 
 
