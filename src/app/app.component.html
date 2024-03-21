@@ -10,8 +10,12 @@ In the parent component's template, pass the string data to the child component 
 <!-- step6 Output Decorator .... binding event emitter with this app-post and creating fucntion "reciveMessage" in app.component.ts whihc is step7-->
 
 <!-- step9 display message  -->
-{{displayChildMssg}}
+<!-- {{displayChildMssg}} -->
 
 <br><br>
 <!-- step9  output decorator -->
-{{fromChildOutput}}
+<!-- {{fromChildOutput}} -->
+
+<!-- PROPERTY BINDING -->
+<img src="{{imgUrl}}" alt="hi"> <!-- Thru String interpolation -->
+<img [src]="imgUrl" alt="hi2"> <!-- Thru STep 2 property binding -->
