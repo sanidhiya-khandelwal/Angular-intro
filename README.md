@@ -37,3 +37,18 @@ This approach is ideal when we want to share data chnages that occur on things l
 
 
 -->
+
+Section: 2
+Display data and event handling
+
+<!-- 
+TOPICS:
+1: Angular Data Binding Methods
+2: Angular Two-way data binding
+3: How to handle Events in Angular (click, keyup,filtering events)
+-->
+
+Display data methods :
+-String interpolation {{}}-used to show dynamic data inside the view (HTML page), we can also show string, numbers and boolean values
+-Property Binding 
+
