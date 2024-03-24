@@ -39,6 +39,22 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   // Event binding
   buttonClick() {
     console.log('Button Click event');
-
   }
+
+  // ************************** EVENT FILTERING **************************************************
+  // Normal event filtering
+  onKeyUp($event: any) {
+    console.log($event.keyCode);
+    if ($event.keyCode === 13) {
+      console.log('Enter key pressed');
+
+    }
+  }
+
+  // ANGULAR EVENT FILTERING
+  onKeyUpUsingAngularEventFiltering() {
+    console.log('Enter key pressed using Angular Event filtering');
+  }
+
+  // *********************************************************************************************
 }

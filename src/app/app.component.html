@@ -31,3 +31,16 @@ will compile into property binding so bettre use property binding only -->
 
 <!-- EVENT BINDING: we use () brackets and not [] this -->
 <button (click)="buttonClick()">Click Me</button>
+<br><br><br>
+
+<!-- **************************************************** -->
+<!-- EVENT FILTERING -->
+<!-- normal events   -->
+<input type="text" (keyup)="onKeyUp($event)">
+<br><br><br>
+<!-- event filtering -->
+<input type="text" (keyup.enter)="onKeyUpUsingAngularEventFiltering()">
+
+<!-- ************************************************************** -->
+
+<br><br><br><br><br>
