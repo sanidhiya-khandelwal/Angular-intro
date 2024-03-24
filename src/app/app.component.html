@@ -33,8 +33,8 @@ will compile into property binding so bettre use property binding only -->
 <button (click)="buttonClick()">Click Me</button>
 <br><br><br>
 
-<!-- **************************************************** -->
-<!-- EVENT FILTERING -->
+<!-- **********************   EVENT FILTERING   ****************************** -->
+
 <!-- normal events   -->
 <input type="text" (keyup)="onKeyUp($event)">
 <br><br><br>
@@ -44,3 +44,9 @@ will compile into property binding so bettre use property binding only -->
 <!-- ************************************************************** -->
 
 <br><br><br><br><br>
+
+<!-- *************************  TEMPLATE VARIABLE  *************************************************** -->
+<input type="text" (keyup.enter)="withoutTemplateVariable($event)">
+<br><br><br>
+<input type="text" (keyup.enter)="withTemplateVariable(username.value)" #username>
+<!-- #username is imp as this is template variable and once dclared use this inside method like username.value  -->

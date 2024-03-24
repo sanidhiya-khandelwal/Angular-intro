@@ -55,3 +55,4 @@ Display data methods :
 -Style Binding -> binding inline css based on conditions or binding style to html element using style binding method
 -Event binding -> to bind events to html elements we use () brackets and not [] this 
 -Event Filtering -> normal event filerting vs angular Event filtering
+-Angular Template Variable - use to get typed value of input field

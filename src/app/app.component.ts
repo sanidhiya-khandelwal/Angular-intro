@@ -56,5 +56,16 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     console.log('Enter key pressed using Angular Event filtering');
   }
 
-  // *********************************************************************************************
+  // **********************************  TEMPLATE VARIABLE  ***********************************************************
+  //  without Template variable
+  withoutTemplateVariable($event: any) {
+    console.log($event.target.value); //when u hit eneter then typed value will be displayed on console
+  }
+
+  //  with Template variable
+  withTemplateVariable(username: any) {
+    console.log(username); //when u hit eneter then typed value will be displayed on console
+
+  }
+
 }
