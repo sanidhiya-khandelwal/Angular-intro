@@ -36,4 +36,9 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   // Step1: class binding
   bool: boolean = true;
 
+  // Event binding
+  buttonClick() {
+    console.log('Button Click event');
+
+  }
 }
