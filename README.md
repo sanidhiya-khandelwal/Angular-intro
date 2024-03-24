@@ -51,4 +51,5 @@ TOPICS:
 Display data methods :
 -String interpolation {{}}-used to show dynamic data inside the view (HTML page), we can also show string, numbers and boolean values
 -Property Binding 
+-Class Binding -> we will conditionally bind css class to HTML element using class binding in Angular 
 

@@ -20,3 +20,6 @@ In the parent component's template, pass the string data to the child component 
 will compile into property binding so bettre use property binding only -->
 <img src="{{imgUrl}}" alt="hi"> <!-- Thru String interpolation -->
 <img [src]="imgUrl" alt="hi2"> <!-- Thru STep 2 property binding -->
+
+<!-- CLASS BINDING -->
+<h5 [class.text-red]="bool">Applying CSS conditionally using class binding</h5>

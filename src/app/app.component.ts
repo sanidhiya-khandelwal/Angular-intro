@@ -32,4 +32,8 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
 
   // Step 1 : property binding
   imgUrl: String = "https://images.pexels.com/photos/17991284/pexels-photo-17991284/free-photo-of-empty-seats-on-ferry.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+
+  // Step1: class binding
+  bool: boolean = true;
+
 }
