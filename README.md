@@ -53,3 +53,4 @@ Display data methods :
 -Property Binding 
 -Class Binding -> we will conditionally bind css class to HTML element using class binding in Angular 
 -Style Binding -> binding inline css based on conditions or binding style to html element using style binding method
+-Event binding -> to bind events to html elements we use () brackets and not [] this 
