@@ -50,3 +50,6 @@ will compile into property binding so bettre use property binding only -->
 <br><br><br>
 <input type="text" (keyup.enter)="withTemplateVariable(username.value)" #username>
 <!-- #username is imp as this is template variable and once dclared use this inside method like username.value  -->
+<br><br><br><br>
+<!-- ***********  2 way data binding ***************** -->
+<input type="text" [(ngModel)]="userName" (keyup.enter)="twoWayDataBinding1()">

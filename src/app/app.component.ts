@@ -40,6 +40,17 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   buttonClick() {
     console.log('Button Click event');
   }
+  // ***********************************************************
+  // *******  2 way data binding **********
+  userName!: string;
+  twoWayDataBinding1() {
+    console.log(this.userName);
+
+  }
+
+  /* **************************************************** */
+
+
 
   // ************************** EVENT FILTERING **************************************************
   // Normal event filtering
@@ -67,5 +78,6 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     console.log(username); //when u hit eneter then typed value will be displayed on console
 
   }
+
 
 }

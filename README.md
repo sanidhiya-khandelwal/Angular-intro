@@ -56,3 +56,5 @@ Display data methods :
 -Event binding -> to bind events to html elements we use () brackets and not [] this 
 -Event Filtering -> normal event filerting vs angular Event filtering
 -Angular Template Variable - use to get typed value of input field
+
+-2 way data binding (getting values from input field)
