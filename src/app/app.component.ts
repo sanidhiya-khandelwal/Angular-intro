@@ -45,11 +45,20 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   userName!: string;
   twoWayDataBinding1() {
     console.log(this.userName);
-
   }
-
   /* **************************************************** */
 
+  /*************** 2 way vs 1 way Data binding **************/
+  // ONE WAY Data Binding (when u hit enter whatever is preset in "textvalue" is printed
+  // and if u make change in input field then also same data present in "textvalue" will be displayed in console)
+
+  // TWO WAY Data Binding (when u hit enter whatever is preset in "textvalue" is printed
+  // and if u make change in input field then modified data present in "textvalue" will be displayed in console)
+
+  textvalue: string = "one way data biding and value coming from component"
+  OneWayDataBinding() {
+    console.log(this.textvalue);
+  }
 
 
   // ************************** EVENT FILTERING **************************************************

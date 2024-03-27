@@ -58,3 +58,23 @@ Display data methods :
 -Angular Template Variable - use to get typed value of input field
 
 -2 way data binding (getting values from input field)
+-one way vs 2 way data binding
+ -one way data binding [COMPONENT==> UNI DIRECTIONAL ==> VIEW(HTML)] Can only bind data from component to view
+
+ - two way data binding [COMPONENT==> BI DIRECTIONAL ==> VIEW(HTML)] 
+                                  <==                <==  
+ can bind data component to view and vice versa
+
+ definition:
+ with one way data binding we can only send data from component to view, we can not send moified data from view to component but in 2 way Db w can pass data from component to view and also we can modify that data from view and send it back to component 
+
+ONE-WAY DATA BINDING
+-String interpolation - {{title}}
+-Property Binding - [src]
+-Class Binding - [class.text-red]
+-Style Binding - [style.backgroundColor]
+
+TWO-WAY DATA BINDING can only be done with ngModel syntax
+-Two-way binding [(ngModel)]
+                                           
+ 

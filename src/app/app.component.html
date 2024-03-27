@@ -53,3 +53,9 @@ will compile into property binding so bettre use property binding only -->
 <br><br><br><br>
 <!-- ***********  2 way data binding ***************** -->
 <input type="text" [(ngModel)]="userName" (keyup.enter)="twoWayDataBinding1()">
+
+<br><br><br><br><br>
+<!--******** ONE-WAY and TWO-WAY DATA BINDING ******-->
+<input type="text" [value]="textvalue" (keyup.enter)="OneWayDataBinding()"> <!--one way Data binding -->
+<br><br><br><br><br>
+<input type="text" [(ngModel)]="textvalue" (keyup.enter)="OneWayDataBinding()"> <!--two way Data binding -->
