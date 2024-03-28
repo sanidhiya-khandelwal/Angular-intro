@@ -76,5 +76,32 @@ ONE-WAY DATA BINDING
 
 TWO-WAY DATA BINDING can only be done with ngModel syntax
 -Two-way binding [(ngModel)]
-                                           
+
+
+<!-- ********************** Angular Directives ******************   -->
+<!-- 
+1)What is Angular Directive and How to use
+2)Types of Angular Directive
+3)About
+ ngIf Directive, ngTemplate Directive, ngSwitchCase Directive, ngFor Directive
+4)Learn About ngClass and ngStyle Directive
+5)Learn Diffrence of Structural and Attribute Directive
+
+Angular Directive:
+An angular directive is special type of technology that can manipulate the DOM object,
+Directives can do adding html elements, removing html elements from DOM dynamically 
+
+HTML DOM ==> Angular Directive ==> DOM(HTML elments (Button) (Add or Remove)) 
+
+Angular Directive (Components)
+-Directives are components without a View
+-Angular Components are Directives, with a View
+
+Angular Directive Types
+-Component Directive=> which is an angular directive with a template view
+-Structural Directive=>which can change the DOM layout by adding & removing DOm elements
+-Attribute Directive=>which can change the appearance or behavior of an element. component or another directive
+-Custom Directive=> which can create our custom directive from scratch 
+ 
+                                         -->
  
