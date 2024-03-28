@@ -59,3 +59,23 @@ will compile into property binding so bettre use property binding only -->
 <input type="text" [value]="textvalue" (keyup.enter)="OneWayDataBinding()"> <!--one way Data binding -->
 <br><br><br><br><br>
 <input type="text" [(ngModel)]="textvalue" (keyup.enter)="OneWayDataBinding()"> <!--two way Data binding -->
+
+<!-- Task -->
+<div class="form-area">
+    <h1>Post form</h1>
+    <input type="text" placeholder="Post Title" [(ngModel)]="postTitle">
+    <br><br><br>
+    <textarea cols="30" rows="10" placeholder="Post Details" [(ngModel)]="postDetails"></textarea>
+    <br><br><br>
+    <input type="text" placeholder="Post image URL" [(ngModel)]="imageURL">
+    <br><br><br>
+    <input type="text" placeholder="Post URL" [(ngModel)]="postURL">
+    <br><br><br>
+    <input type="checkbox" [(ngModel)]="addBackground"> Add Background
+</div>
+<div class="preview-area">
+    <h1><span [class.add-background]="addBackground">{{postTitle}}</span></h1>
+    <h1>{{postDetails}}</h1>
+    <img [src]="imageURL" alt="">
+    <a [href]="postURL" target="_blank" [style.display]="postURL ? 'block':'none'">More Details</a>
+</div>

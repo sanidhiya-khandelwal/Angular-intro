@@ -88,5 +88,12 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
 
   }
 
+  // Task 1: play with events and binding
+  postTitle!: string;
+  postDetails!: string;
+  imageURL!: string;
+  postURL!: string;
+  addBackground!: boolean;
+
 
 }
