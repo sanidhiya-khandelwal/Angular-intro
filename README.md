@@ -107,3 +107,5 @@ Angular Directive Types
 1) NgFor Directive:we use ngFor Directive to render an Array inside the html View, it is a structural Directive, with NgFor Directive we can manipulate the DOM(such as add or remove html elments to DOM) 
  
  -->
+
+- Fetch Object Array thru ngFor directive
