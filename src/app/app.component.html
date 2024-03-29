@@ -92,11 +92,12 @@ will compile into property binding so bettre use property binding only -->
     <li *ngFor="let post of postArray">{{post}}</li>
 </ul>
 
-<!-- fetching object array -->
+<!-- fetching full object array -->
 <ul>
     <li *ngFor="let post of objArray">{{post | json}}</li>
 </ul>
 
+<!-- fetching any property -->
 <ul>
     <li *ngFor="let post of objArray">{{post.postTitle}}</li>
 </ul>
