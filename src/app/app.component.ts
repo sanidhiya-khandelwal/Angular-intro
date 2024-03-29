@@ -113,4 +113,13 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     { id: 3, postTitle: 'post 3' },
     { id: 4, postTitle: 'post 4' }
   ]
+
+  addNew() {
+    this.objArray.push({ id: 6, postTitle: 'post 6' })
+  }
+  onDelete(post: any) {
+    let index = this.objArray.indexOf(post);
+    this.objArray.splice(index, 1)
+  }
+
 }

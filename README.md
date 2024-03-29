@@ -109,3 +109,5 @@ Angular Directive Types
  -->
 
 - Fetch Object Array thru ngFor directive
+
+-Angular change detection (add/remove a new data object when we click on a button )

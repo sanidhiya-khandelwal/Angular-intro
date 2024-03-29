@@ -97,7 +97,13 @@ will compile into property binding so bettre use property binding only -->
     <li *ngFor="let post of objArray">{{post | json}}</li>
 </ul>
 
+<button (click)="addNew()">Add new data</button>
+
 <!-- fetching any property -->
 <ul>
-    <li *ngFor="let post of objArray">{{post.postTitle}}</li>
+    <li *ngFor="let post of objArray">{{post.postTitle}}
+        <button (click)="onDelete(post)">Delete</button>
+        <!--passing num of the object to be deleted so that we can get index using indexOf -->
+
+    </li>
 </ul>
