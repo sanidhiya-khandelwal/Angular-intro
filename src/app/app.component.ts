@@ -121,5 +121,8 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     let index = this.objArray.indexOf(post);
     this.objArray.splice(index, 1)
   }
+  onDelete1(index: number) {
+    this.objArray.splice(index, 1)
+  }
 
 }

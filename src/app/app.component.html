@@ -107,3 +107,11 @@ will compile into property binding so bettre use property binding only -->
 
     </li>
 </ul>
+
+<!-- passing index value (Usage of Array Index) -->
+<ul>
+    <li *ngFor="let post of objArray; let i=index">{{post.postTitle}}
+        <button (click)="onDelete1(i)">Delete</button>
+
+    </li>
+</ul>
