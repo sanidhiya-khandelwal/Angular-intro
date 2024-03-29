@@ -115,3 +115,13 @@ will compile into property binding so bettre use property binding only -->
 
     </li>
 </ul>
+
+<!-- conditional array -->
+<div *ngIf="conditonalArray.length>0">
+    <ul>
+        <li *ngFor="let p of conditonalArray">{{p}}</li>
+    </ul>
+</div>
+<div *ngIf="conditonalArray.length==0">
+    <h1>Nothing to display</h1>
+</div>

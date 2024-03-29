@@ -125,4 +125,6 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     this.objArray.splice(index, 1)
   }
 
+  conditonalArray = [];
+
 }
