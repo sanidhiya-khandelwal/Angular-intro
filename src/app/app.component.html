@@ -79,3 +79,15 @@ will compile into property binding so bettre use property binding only -->
     <img [src]="imageURL" alt="">
     <a [href]="postURL" target="_blank" [style.display]="postURL ? 'block':'none'">More Details</a>
 </div>
+
+<!-- method 1 : displaying array thru string interpolation -->
+<ul>
+    <li>{{postArray[0]}}</li>
+    <li>{{postArray[1]}}</li>
+    <li>{{postArray[2]}}</li>
+</ul>
+
+<!-- method 3 : *ngFor -->
+<ul>
+    <li *ngFor="let post of postArray">{{post}}</li>
+</ul>

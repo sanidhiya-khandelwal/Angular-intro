@@ -14,9 +14,9 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   //ViewChild ki help se Child k saare variables/data accessible h
   @ViewChild(PostComponent) childComp: any; //step1 view ki.. view child takes parent component and name of variable u can give any name
 
-  constructor() { //step6 view ki.. to  understabd th need of ngAfterViewInit()
-    console.log(this.childComp); // yh dega undefined "constructor run jb ho rha tha tb childComp m kuch nhi tha it was not intialized so undefined print ho rha tha"
-  }
+  // constructor() { //step6 view ki.. to  understabd th need of ngAfterViewInit()
+  //   console.log(this.childComp); // yh dega undefined "constructor run jb ho rha tha tb childComp m kuch nhi tha it was not intialized so undefined print ho rha tha"
+  // }
   ngAfterViewInit() { //step7 view ki.. lifecycle hook -> coz in constructor run jb ho rha tha tb childComp m kuch nhi tha it was not intialized so undefined print ho rha tha so we used this hook coming from interface "AfterViewInit" yh last m run hota yh tb call hota h jb pura wave initlaized hojaata h
     console.log(this.childComp); // display in console
     this.displayChildMssg = this.childComp.childMessage //step8 store the variable and do string interpolation
@@ -95,5 +95,15 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   postURL!: string;
   addBackground!: boolean;
 
+  // ngFor
+  postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4'];
+
+  //method 2:  looping thru javascript
+  constructor() {
+    for (let i = 0; i < this.postArray.length; i++) {
+      console.log(this.postArray[i]);
+
+    }
+  }
 
 }

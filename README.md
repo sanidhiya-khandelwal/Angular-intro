@@ -101,7 +101,9 @@ Angular Directive Types
 -Component Directive=> which is an angular directive with a template view
 -Structural Directive=>which can change the DOM layout by adding & removing DOm elements
 -Attribute Directive=>which can change the appearance or behavior of an element. component or another directive
--Custom Directive=> which can create our custom directive from scratch 
- 
+-Custom Directive=> which can create our custom directive from scratch  
                                          -->
+ <!--
+1) NgFor Directive:we use ngFor Directive to render an Array inside the html View, it is a structural Directive, with NgFor Directive we can manipulate the DOM(such as add or remove html elments to DOM) 
  
+ -->
