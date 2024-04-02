@@ -166,3 +166,15 @@ will compile into property binding so bettre use property binding only -->
     color:isActive?'red':'black',
     textTransform:isActive?'uppercase':'lowercase'
 }">with ngStyle Directive</h1>
+
+<!--******** ngClass directive ******-->
+<p>NgClass Directive</p>
+
+<h1 [class.main]="isActive" [class.text-weight]="isActive">
+    class binding
+</h1>
+
+<h1 [ngClass]="{
+    'main':isActive,
+    'text-weight':isActive
+}">ngClass directive</h1>

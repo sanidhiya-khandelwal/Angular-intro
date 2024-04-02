@@ -119,3 +119,5 @@ using this we can give "else" condition and avoid multiple if condition but reme
 
 <!-- ********** ngStyle Directive ********* -->
 diplay style with conditions earlier we did this with style binding approach
+
+<!-- ********* ngClass directive ********** -->

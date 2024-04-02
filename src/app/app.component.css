@@ -10,3 +10,11 @@
 .add-background {
     background-color: yellow;
 }
+
+.main {
+    color: purple;
+}
+
+.text-weight {
+    font-weight: 900;
+}
