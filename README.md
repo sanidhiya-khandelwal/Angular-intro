@@ -121,3 +121,24 @@ using this we can give "else" condition and avoid multiple if condition but reme
 diplay style with conditions earlier we did this with style binding approach
 
 <!-- ********* ngClass directive ********** -->
+
+<!-- *******  Structural Directive VS Attribute Directives ***** -->
+we saw there are 4 angular directive types, now we will see
+Structural, Attribute
+
+Structural Directives:
+--------------------
+(
+    with the structural directive we can manipulate the DOM by adding & removing HTML elments to the DOM
+)
+-Responsible for the html layout
+-shape or reshape the DOM structure by adding & removing HTML element.
+-Can identiy with leading * Symbol
+-Structural directives:
+*ngFor,*ngIf,*ngSwitchCase
+
+Attribute Directives
+--------------------
+-Change the appearance or the behaviour of a DOM Element
+-Attribute Directives:
+-ngStyle,ngClass=> with them we applied styles to elements conditionally, we use these Attribute Directives as like property binding inside of square brackets and we do not add any leading asterisk here as this is not Structural Directive.
