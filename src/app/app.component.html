@@ -117,11 +117,15 @@ will compile into property binding so bettre use property binding only -->
 </ul>
 
 <!-- conditional array -->
-<div *ngIf="conditonalArray.length>0">
+<div *ngIf="conditonalArray.length>0; else noData">
     <ul>
         <li *ngFor="let p of conditonalArray">{{p}}</li>
     </ul>
 </div>
-<div *ngIf="conditonalArray.length==0">
+<!-- <div *ngIf="conditonalArray.length==0">
     <h1>Nothing to display</h1>
-</div>
+</div> -->
+
+<ng-template #noData>
+    <p>There is no Data to display </p>
+</ng-template>
