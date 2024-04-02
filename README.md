@@ -116,3 +116,6 @@ Angular Directive Types
 using this we can give "else" condition and avoid multiple if condition but remember it won't work inside <div> use <ng-template> for else condition, ng-template tag won't work for normal html elements, works only for structural directive
 
 <!-- *********** ngSwitch case directive -->
+
+<!-- ********** ngStyle Directive ********* -->
+diplay style with conditions earlier we did this with style binding approach

@@ -134,4 +134,5 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     this.stepForm = status;
   }
 
+  isActive: boolean = true;
 }

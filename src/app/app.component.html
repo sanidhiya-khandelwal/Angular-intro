@@ -155,3 +155,14 @@ will compile into property binding so bettre use property binding only -->
     <div *ngSwitchDefault>Something else</div>
     <!-- *ngSwitchDefault will run for the first time but when u click on button thn this will be removed & other mssgs will be shown-->
 </div>
+
+<!-- ********* NgStyle Directive ********** -->
+<!-- style binding -->
+<h1 [style.color]="isActive?'red':'black'" [style.textTransform]="isActive?'uppercase':'lowercase'">
+    With Style binding
+</h1>
+<!--**** ngStyle directive *****-->
+<h1 [ngStyle]="{
+    color:isActive?'red':'black',
+    textTransform:isActive?'uppercase':'lowercase'
+}">with ngStyle Directive</h1>
