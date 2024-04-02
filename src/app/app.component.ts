@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component'; //step2 view ki..import c
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit { //step 5 view ki.. implement interface
+  stepForm!: string;
   title = '01AgIntro';
   parentMessage: string = 'Message coming from parent component'; //step 1 creating variable in parent that needs to be passed to child component using @input decorator 
   displayChildMssg: string | undefined; //step3view ki.. creating variable
@@ -126,5 +127,11 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   }
 
   conditonalArray = [];
+
+  // ngSwitch case
+  // without ngSwitch case
+  onClick(status: string) {
+    this.stepForm = status;
+  }
 
 }

@@ -132,3 +132,26 @@ will compile into property binding so bettre use property binding only -->
 <ng-template #noData>
     <p>There is no Data to display </p>
 </ng-template>
+
+<!-- **** ngSwitch case **** -->
+<p>without Switch Cases</p>
+
+<div>
+    <button (click)="onClick('step1')">Step 1</button>
+    <button (click)="onClick('step2')">Step 2</button>
+    <button (click)="onClick('step3')">Step 3</button>
+</div>
+
+<!-- <div *ngIf="stepForm=='step1'">Step 1 Form</div>
+<div *ngIf="stepForm=='step2'">Step 2 Form</div>
+<div *ngIf="stepForm=='step3'">Step 3 Form</div> -->
+
+<!--************* with Switch case ******** -->
+<br>
+<div [ngSwitch]="stepForm"> <!-- [ngSwitch] is property binding-->
+    <div *ngSwitchCase="'step1'">Step 1 Form with switch case</div>
+    <div *ngSwitchCase="'step2'">Step 2 Form with switch case</div>
+    <div *ngSwitchCase="'step3'">Step 3 Form with switch case</div>
+    <div *ngSwitchDefault>Something else</div>
+    <!-- *ngSwitchDefault will run for the first time but when u click on button thn this will be removed & other mssgs will be shown-->
+</div>
