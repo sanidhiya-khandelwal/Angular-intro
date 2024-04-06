@@ -154,4 +154,7 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     this.userArray.splice(index, 1)
   }
 
+
+  //inbulit angular pipes
+  heading: string = "Angular";
 }
