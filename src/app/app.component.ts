@@ -174,4 +174,11 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     "post 4",
     "post 5",
   ]
+
+  // custom pipe
+  userDetails = {
+    name: "User 1",
+    city: "New York",
+    countryCode: "US"
+  }
 }
