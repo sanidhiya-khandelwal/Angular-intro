@@ -231,3 +231,5 @@ will compile into property binding so bettre use property binding only -->
 <h2>{{currencyNum| currency:"JPY"}}</h2>
 <!-- To display currency code instead of symbol pass false o/p here "JPY10"-->
 <h2>{{currencyNum | currency:"JPY" :false}}</h2>
+<!-- round of in currency -->
+<h2>{{currencyNum | currency:"JPY" :false: '6.2-2'}}</h2>
