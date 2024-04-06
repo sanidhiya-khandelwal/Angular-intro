@@ -159,4 +159,5 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   heading: string = "Angular";
   count: number = 100000;
   decNum: number = .534634646; //output: 00.53
+  currencyNum: number = 10;
 }
