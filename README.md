@@ -166,3 +166,34 @@ Uppercase pipe         Date pipe
 Lowercase pipe         JSON pipe
 Decimal/Number pipe    Percent pipe
 Currency pipe          Slice Pipe
+
+<!-- 
+
+
+The expression {{ decNum | number:'1.2-2' }} is used in Angular templates for formatting numbers. Here's what each part means:
+
+decNum: This is presumably a variable in your Angular component that holds the number you want to format.
+
+number: This is an Angular pipe called the "number pipe". Pipes in Angular are used for transforming data in the template.
+
+'1.2-2': This is the formatting pattern provided to the number pipe. It consists of three parts:
+
+1 before the decimal point: This indicates the minimum number of integer digits.
+
+2 between the decimal point and the fraction digits: This indicates the minimum number of fraction digits.
+
+-2 after the fraction digits: This indicates the maximum number of fraction digits.
+
+So, for example, if decNum is 1234.56789, applying the number pipe with the formatting pattern '1.2-2' will result in 1,234.57.
+
+Here's a breakdown of the formatting:
+
+1 before the decimal point: It ensures that at least one digit appears before the decimal point, adding leading zeros if necessary.
+
+2 after the decimal point: It ensures that there are at least two digits after the decimal point, rounding or padding with zeros if necessary.
+
+-2 after the fraction digits: It limits the maximum number of fraction digits to 2. So, if there are more than two fraction digits, it rounds the number to two decimal places.
+
+what is fraction digit
+Fraction digits refer to the digits that appear after the decimal point in a number. For example, in the number 1234.56789, the fraction digits are 56789.
+ -->

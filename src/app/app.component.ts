@@ -158,4 +158,5 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   //inbulit angular pipes
   heading: string = "Angular";
   count: number = 100000;
+  decNum: number = .534634646; //output: 00.53
 }
