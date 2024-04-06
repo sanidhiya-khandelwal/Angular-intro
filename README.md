@@ -142,3 +142,27 @@ Attribute Directives
 -Change the appearance or the behaviour of a DOM Element
 -Attribute Directives:
 -ngStyle,ngClass=> with them we applied styles to elements conditionally, we use these Attribute Directives as like property binding inside of square brackets and we do not add any leading asterisk here as this is not Structural Directive.
+
+
+<!--*********** Angular pipes *******************-->
+-what is Angular pipe and how to use.
+-what are inbuilt pipes in angular
+-how to pass parameters to an angular pipe
+-how to create a custom pipe from scratch
+
+-what is Angular pipe and how to use.
+---------------------------------
+Pipes are used to transforming data into a particular format when we only need that data transformed in a template or the HTML View.
+
+example=>
+10000      ====>Angular Number/Decimal pipe====> 100,000
+(raw value
+coming from ====>Angular Currency pipe  ====> $100,000
+DB)
+
+-what are inbuilt pipes in angular
+----------------------------------
+Uppercase pipe         Date pipe
+Lowercase pipe         JSON pipe
+Decimal/Number pipe    Percent pipe
+Currency pipe          Slice Pipe
