@@ -161,4 +161,9 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   decNum: number = .534634646; //output: 00.53
   currencyNum: number = 10;
   today: Date = new Date();
+
+  postObj: object = {
+    id: 1,
+    postTitle: "Post 1"
+  }
 }
