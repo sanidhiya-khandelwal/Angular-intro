@@ -135,4 +135,23 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
   }
 
   isActive: boolean = true;
+
+  // task 2
+  name!: string;
+  email!: string;
+  address!: string;
+
+  userArray: Array<any> = [];
+  saveData() {
+    this.userArray.push({
+      "name": this.name,
+      "email": this.email,
+      "address": this.address
+    })
+    console.log(this.userArray);
+  }
+  onDeleteUser(index: number) {
+    this.userArray.splice(index, 1)
+  }
+
 }

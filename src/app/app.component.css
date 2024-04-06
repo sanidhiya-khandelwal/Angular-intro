@@ -3,7 +3,6 @@
 }
 
 .form-area {
-    border: 2px solid black;
     text-align: center;
 }
 
@@ -17,4 +16,9 @@
 
 .text-weight {
     font-weight: 900;
+}
+
+.table-area {
+    position: absolute;
+    left: 10%;
 }
