@@ -166,4 +166,12 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     id: 1,
     postTitle: "Post 1"
   }
+
+  sliceArray: Array<string> = [
+    "post 1",
+    "post 2",
+    "post 3",
+    "post 4",
+    "post 5",
+  ]
 }
