@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { AppendPipe } from './Pipes/append.pipes';
+import { AppendCLIPipe } from './Pipes/append-cli.pipe';
+import { PipeTransformPipe } from './pipe-transform.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AppendPipe } from './Pipes/append.pipes';
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    AppendPipe
+    AppendPipe,
+    AppendCLIPipe,
+    PipeTransformPipe
   ],
   imports: [
     BrowserModule,

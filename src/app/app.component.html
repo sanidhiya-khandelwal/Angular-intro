@@ -255,5 +255,14 @@ will compile into property binding so bettre use property binding only -->
 <h1>{{postArray}}</h1>
 <h1>{{postArray | slice:2:3}}</h1>
 
-<!-- custom slice -->
+<!-- custom pipe without "ng g pipe pipename" command-->
 <h3>{{userDetails.city | append}}</h3>
+<!-- custom pipe with "ng g pipe pipename" command-->
+<h3>{{userDetails.city | appendCLI}}</h3>
+
+<!-- custom pipe with arguments -->
+<p>{{dummyTxt}}</p>
+<!-- <p>{{dummyTxt | pipeTransform}}</p> --> <!-- if we've not passed any argument(Right now it is not working)-->
+<p>{{dummyTxt | pipeTransform:12}}</p>
+
+<app-post></app-post>

@@ -197,3 +197,12 @@ Here's a breakdown of the formatting:
 what is fraction digit
 Fraction digits refer to the digits that appear after the decimal point in a number. For example, in the number 1234.56789, the fraction digits are 56789.
  -->
+
+ <!-- generate custom pipe with command "ng g pipe Pipes/appendCLI-->
+
+ <!-- ********* ANGULAR SERVICES *********-->
+ -What is Angular service and how to use ?
+ -How to create angular service from scratch ?
+ -Generate Angular services using angular cli ?
+ -What is dependency Injection and How to use ?
+ -What is data modelling and Angular interface ? 

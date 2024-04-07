@@ -1,12 +1,23 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core'; //step2 Output Decorator.... import Output, EventEmitter
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core'; //step2 Output Decorator.... import Output, EventEmitter
 import { log } from 'console';
+import { PostService } from '../Services/post.service';
+
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrl: './post.component.css'
 })
-export class PostComponent {
+export class PostComponent implements OnInit {
+  posts: Array<any> = [];
+  constructor() {
+    let postService = new PostService(); //created instance of PostService
+    this.posts = postService.postList
+  }
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   title: string = "List of posts";
   postParentMessage: string = 'Message coming from the post parent' //step1 creating variable
 

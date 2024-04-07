@@ -1,6 +1,5 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { PostComponent } from './post/post.component'; //step2 view ki..import compoenent
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -181,4 +180,6 @@ export class AppComponent implements AfterViewInit { //step 5 view ki.. implemen
     city: "New York",
     countryCode: "US"
   }
+
+  dummyTxt: string = "Thuis is fbskfbklfnlsnflsnfl fhnslls asjflsjnfladl ajhdlajdladjla;k;jkp;"
 }

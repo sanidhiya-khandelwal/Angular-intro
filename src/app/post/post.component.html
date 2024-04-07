@@ -5,3 +5,7 @@
 
 <button (click)='sendMessage()'>Click</button>
 <!-- step 4: Output Decorator.... crae button with click event and call fubnction "sendMessage()"   -->
+
+<ul>
+    <li *ngFor="let post of posts">{{post.postTitle}}</li>
+</ul>
