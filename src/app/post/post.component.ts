@@ -7,7 +7,7 @@ import { PostService } from '../Services/post.service';
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrl: './post.component.css',
-  providers: [PostService] //for this DI to work we need to tell angular that this service class "PostService" is a injectable class so we did this using "providers" parameters for this component decorator
+  // providers: [PostService] //for this DI to work we need to tell angular that this service class "PostService" is a injectable class so we did this using "providers" parameters for this component decorator
 })
 export class PostComponent implements OnInit {
   posts: Array<any> = [];

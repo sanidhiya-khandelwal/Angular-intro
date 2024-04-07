@@ -10,6 +10,8 @@ import { PostListComponent } from './post-list/post-list.component';
 import { AppendPipe } from './Pipes/append.pipes';
 import { AppendCLIPipe } from './Pipes/append-cli.pipe';
 import { PipeTransformPipe } from './pipe-transform.pipe';
+import { PostList1Component } from './post-list-1/post-list-1.component';
+import { PostService } from './Services/post.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { PipeTransformPipe } from './pipe-transform.pipe';
     PostListComponent,
     AppendPipe,
     AppendCLIPipe,
-    PipeTransformPipe
+    PipeTransformPipe,
+    PostList1Component
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,7 @@ import { PipeTransformPipe } from './pipe-transform.pipe';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(), PostService
   ],
   bootstrap: [AppComponent]
 })
